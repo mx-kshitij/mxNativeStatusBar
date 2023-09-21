@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget
+    id="mendix.statusbarrn.StatusBarRN"
+    pluginWidget="true"
+    needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Native"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
+    <name>Status Bar RN</name>
+    <description>My widget description</description>
+    <icon />
+    <properties>
+        <propertyGroup caption="General">
+            <property key="hideAttr" type="attribute" required="false">
+                <caption>Hide ?</caption>
+                <description>Hide status bar. Default is false.</description>
+                <attributeTypes>
+                    <attributeType name="Boolean" />
+                </attributeTypes>
+            </property>
+            <property key="animatedAttr" type="attribute" required="false">
+                <caption>Animated ?</caption>
+                <description>Default is true</description>
+                <attributeTypes>
+                    <attributeType name="Boolean" />
+                </attributeTypes>
+            </property>
+            <property key="bgColorAttr" type="attribute" required="false">
+                <caption>Background color</caption>
+                <description>Default is white</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="barStyleEnum" type="enumeration" defaultValue="default">
+                <caption>Bar style</caption>
+                <description/>
+                <enumerationValues>
+                    <enumerationValue key="default">Default</enumerationValue>
+                    <enumerationValue key="dark_content">Dark content</enumerationValue>
+                    <enumerationValue key="light_content">Light content</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="transitionEnum" type="enumeration" defaultValue="none">
+                <caption>Bar style</caption>
+                <description/>
+                <enumerationValues>
+                    <enumerationValue key="fade">Fade</enumerationValue>
+                    <enumerationValue key="slide">Slide</enumerationValue>
+                    <enumerationValue key="none">None</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
