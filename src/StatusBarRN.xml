@@ -9,8 +9,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
 >
-    <name>Status Bar RN</name>
-    <description>My widget description</description>
+    <name>Status Bar</name>
+    <description>Configure your native status bar</description>
     <icon />
     <properties>
         <propertyGroup caption="General">
