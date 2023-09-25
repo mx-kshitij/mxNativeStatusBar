@@ -14,30 +14,30 @@
     <icon />
     <properties>
         <propertyGroup caption="General">
-            <property key="hideAttr" type="attribute" required="false">
+            <property key="platformConfig" type="enumeration" defaultValue="both">
+                <caption>Bar style</caption>
+                <description />
+                <enumerationValues>
+                    <enumerationValue key="android">Android</enumerationValue>
+                    <enumerationValue key="ios">iOS</enumerationValue>
+                    <enumerationValue key="both">Both</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="hideStatusBar" type="boolean" defaultValue="false">
                 <caption>Hide ?</caption>
-                <description>Hide status bar. Default is false.</description>
-                <attributeTypes>
-                    <attributeType name="Boolean" />
-                </attributeTypes>
+                <description>Hide status bar ?</description>
             </property>
-            <property key="animatedAttr" type="attribute" required="false">
+            <property key="isAnimated" type="boolean" defaultValue="true">
                 <caption>Animated ?</caption>
-                <description>Default is true</description>
-                <attributeTypes>
-                    <attributeType name="Boolean" />
-                </attributeTypes>
+                <description />
             </property>
-            <property key="bgColorAttr" type="attribute" required="false">
+            <property key="bgColor" type="textTemplate" required="false">
                 <caption>Background color</caption>
-                <description>Default is white</description>
-                <attributeTypes>
-                    <attributeType name="String" />
-                </attributeTypes>
+                <description>Default is transparent</description>
             </property>
             <property key="barStyleEnum" type="enumeration" defaultValue="default">
                 <caption>Bar style</caption>
-                <description/>
+                <description />
                 <enumerationValues>
                     <enumerationValue key="default">Default</enumerationValue>
                     <enumerationValue key="dark_content">Dark content</enumerationValue>
@@ -46,7 +46,7 @@
             </property>
             <property key="transitionEnum" type="enumeration" defaultValue="none">
                 <caption>Bar style</caption>
-                <description/>
+                <description />
                 <enumerationValues>
                     <enumerationValue key="fade">Fade</enumerationValue>
                     <enumerationValue key="slide">Slide</enumerationValue>

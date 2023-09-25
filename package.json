@@ -24,10 +24,9 @@
   "devDependencies": {
     "@mendix/pluggable-widgets-tools": "^9.24.0",
     "@types/big.js": "^6.0.2"
-    
   },
   "dependencies": {
-
+    "react-native-linear-gradient": "^2.8.3"
   },
   "resolutions": {
     "react": "18.2.0",

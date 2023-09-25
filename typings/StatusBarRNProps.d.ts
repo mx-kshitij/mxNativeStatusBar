@@ -4,7 +4,9 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
-import { EditableValue } from "mendix";
+import { DynamicValue } from "mendix";
+
+export type PlatformConfigEnum = "android" | "ios" | "both";
 
 export type BarStyleEnumEnum = "default" | "dark_content" | "light_content";
 
@@ -13,9 +15,10 @@ export type TransitionEnumEnum = "fade" | "slide" | "none";
 export interface StatusBarRNProps<Style> {
     name: string;
     style: Style[];
-    hideAttr?: EditableValue<boolean>;
-    animatedAttr?: EditableValue<boolean>;
-    bgColorAttr?: EditableValue<string>;
+    platformConfig: PlatformConfigEnum;
+    hideStatusBar: boolean;
+    isAnimated: boolean;
+    bgColor?: DynamicValue<string>;
     barStyleEnum: BarStyleEnumEnum;
     transitionEnum: TransitionEnumEnum;
 }
@@ -29,9 +32,10 @@ export interface StatusBarRNPreviewProps {
     style: string;
     styleObject?: CSSProperties;
     readOnly: boolean;
-    hideAttr: string;
-    animatedAttr: string;
-    bgColorAttr: string;
+    platformConfig: PlatformConfigEnum;
+    hideStatusBar: boolean;
+    isAnimated: boolean;
+    bgColor: string;
     barStyleEnum: BarStyleEnumEnum;
     transitionEnum: TransitionEnumEnum;
 }
