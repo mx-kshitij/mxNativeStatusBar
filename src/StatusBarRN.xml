@@ -25,7 +25,11 @@
             </property>
             <property key="hideStatusBar" type="boolean" defaultValue="false">
                 <caption>Hide ?</caption>
-                <description>Hide status bar ?</description>
+                <description>Hide status bar</description>
+            </property>
+            <property key="translucent" type="boolean" defaultValue="true">
+                <caption>Translucent</caption>
+                <description>Android only. Match the color automatically. Background color should be empty, Hide should be false.</description>
             </property>
             <property key="isAnimated" type="boolean" defaultValue="true">
                 <caption>Animated ?</caption>
@@ -33,7 +37,7 @@
             </property>
             <property key="bgColor" type="textTemplate" required="false">
                 <caption>Background color</caption>
-                <description>Default is transparent</description>
+                <description>Default is transparent. Android only.</description>
             </property>
             <property key="barStyleEnum" type="enumeration" defaultValue="default">
                 <caption>Bar style</caption>

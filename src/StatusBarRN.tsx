@@ -19,7 +19,8 @@ export function StatusBarRN({
     isAnimated,
     bgColor,
     barStyleEnum,
-    transitionEnum
+    transitionEnum,
+    translucent
 }: StatusBarRNProps<CustomStyle>): ReactElement {
     // Load states to configure the status bar
     const [backgroundColor, setBackgroundColor] = useState<any>("transparent");
@@ -66,6 +67,7 @@ export function StatusBarRN({
         return (
             <SafeAreaView>
                 <StatusBar
+                    translucent={translucent}
                     animated={isAnimated}
                     backgroundColor={backgroundColor}
                     barStyle={barStyle}

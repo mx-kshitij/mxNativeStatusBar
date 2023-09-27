@@ -17,6 +17,7 @@ export interface StatusBarRNProps<Style> {
     style: Style[];
     platformConfig: PlatformConfigEnum;
     hideStatusBar: boolean;
+    translucent: boolean;
     isAnimated: boolean;
     bgColor?: DynamicValue<string>;
     barStyleEnum: BarStyleEnumEnum;
@@ -34,6 +35,7 @@ export interface StatusBarRNPreviewProps {
     readOnly: boolean;
     platformConfig: PlatformConfigEnum;
     hideStatusBar: boolean;
+    translucent: boolean;
     isAnimated: boolean;
     bgColor: string;
     barStyleEnum: BarStyleEnumEnum;
